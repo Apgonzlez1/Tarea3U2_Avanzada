@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+  <form id="registroForm">
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre de usuario" required minlength="3"><br>
+    <input type="email" id="email" name="email" placeholder="Correo electrónico" required><br>
+    <input type="password" id="password" name="password" placeholder="Contraseña" required minlength="8"><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar contraseña" required><br>
+    <input type="number" id="edad" name="edad" placeholder="Edad" min="18" max="99"><br>
+    <textarea id="biografia" name="biografia" placeholder="Biografía" maxlength="300"></textarea><br>
+    <select id="rol" name="rol">
+      <option value="usuario">Usuario</option>
+      <option value="admin">Administrador</option>
+    </select><br>
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
